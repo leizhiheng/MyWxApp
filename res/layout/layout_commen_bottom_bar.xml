@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/button_1"
+        style="@style/bottomMenu"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/item_info_hall_bg"
+        android:tag="1"
+        android:text="选项卡1" />
+
+    <RadioButton
+        android:id="@+id/button_2"
+        style="@style/bottomMenu"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/item_info_hall_bg"
+        android:tag="2"
+        android:text="选项卡2" />
+
+    <RadioButton
+        android:id="@+id/button_3"
+        style="@style/bottomMenu"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/item_info_hall_bg"
+        android:tag="3"
+        android:text="选项卡3" />
+
+    <RadioButton
+        android:id="@+id/button_4"
+        style="@style/bottomMenu"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/item_info_hall_bg"
+        android:tag="4"
+        android:text="选项卡4" />
+
+    <RadioButton
+        android:id="@+id/button_5"
+        style="@style/bottomMenu"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/item_info_hall_bg"
+        android:tag="5"
+        android:text="选项卡5" />
+
+</RadioGroup>

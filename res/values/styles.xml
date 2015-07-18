@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -15,6 +15,23 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    	<item name="android:background">@color/white</item>
+    
+    </style>
+    
+    <style name="MyAppTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+
+    </style>
+    
+    <!-- 底部导航栏样式 -->
+    <style name="bottomMenu">
+        <item name="android:layout_width">0.0dp</item>		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:padding">3.0dp</item>
+		<item name="android:button">@color/transparent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">@color/gray</item>i
     </style>
 
 </resources>
