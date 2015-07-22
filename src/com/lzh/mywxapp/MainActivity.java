@@ -8,7 +8,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.lzh.mywxapp.app.ActivityManager;
 import com.lzh.mywxapp.app.BaseActivity;
+import com.lzh.mywxapp.ui.WxShareActivity;
+import com.lzh.mywxapp.ui.view.HeadView;
 
 /**
  * 微信功能集成
@@ -20,16 +23,17 @@ import com.lzh.mywxapp.app.BaseActivity;
  * 3.注册到微信
  *
  */
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
 	private ListView mListView;
 	private String[] titleItems = new String[]{"To Wx share And Collection"};
+	private HeadView headView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_base);
-//		setContentLayout(R.layout.activity_main);
-//		initView();
+//		setContentView(R.layout.activity_base);
+		setContentLayout(R.layout.activity_main);
+		initView();
 	}
 	
 	public void initView(){
@@ -44,7 +48,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-//				showToast("item "+titleItems[arg2]+" has been clicked");
+				showToast("item "+titleItems[arg2]+" has been clicked");
+				ActivityManager.startActivity(WxShareActivity.class, null, MainActivity.this);
 			}
 		});
 	}

@@ -26,6 +26,6 @@ public class ActivityManager {
 	
 	public static void finish(Activity activity){
 		activity.finish();
-		activity.overridePendingTransition(R.anim.push_right_out, R.anim.push_right_in);
+		activity.overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
 	}
 }

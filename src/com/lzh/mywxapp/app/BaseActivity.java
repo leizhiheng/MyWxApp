@@ -46,6 +46,14 @@ public class BaseActivity extends FragmentActivity {
 		headView.setTitle(msg);
 	}
 	
+	protected void showBackBtn() {
+		headView.showBackBtn();
+	}
+	
+	protected void showRightBtn() {
+		headView.showRightBtn();
+	}
+	
 	public void setContentLayout(int layoutId) {
 		setContentLayout(LayoutInflater.from(this).inflate(layoutId, null));
 	}

@@ -30,6 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.lzh.mywxapp.app.BaseActivity"></activity>
+        <activity android:name="com.lzh.mywxapp.ui.WxShareActivity"></activity>
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@ public class AppContext extends Application{
 	private static final String APP_ID_WX = "wx8a2507b2d985af62";//微信AppId
 	private static final String APP_SECRET = "66206da4f750531554d63825e94ecea1";//微信AppSecret
 	
-	private IWXAPI api;//第三方app和微信通信的openapi接口
+	public static IWXAPI wxapi;//第三方app和微信通信的openapi接口
 	
 	@Override
 	public void onCreate() {
@@ -25,9 +25,9 @@ public class AppContext extends Application{
 	
 	private void  regToWX(){
 		//获取api实例
-		api = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
+		wxapi = WXAPIFactory.createWXAPI(this, APP_ID_WX, true);
 		//将应用的AppId注册到微信
-		api.registerApp(APP_ID_WX);
+		wxapi.registerApp(APP_ID_WX);
 	}
 
 }
